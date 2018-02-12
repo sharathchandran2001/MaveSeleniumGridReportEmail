@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="FirefoxTest2(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="eldt.Testcases.searchEccnPage">
+        <methods>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- eldt.Testcases.searchEccnPage -->
+      <class name="eldt.Testcases.searchCrossReferencePage">
+        <methods>
+          <include name="referenceSearch"/>
+          <include name="launchbrowser"/>
+          <include name="eldtLogin"/>
+        </methods>
+      </class> <!-- eldt.Testcases.searchCrossReferencePage -->
+    </classes>
+  </test> <!-- FirefoxTest2(failed) -->
+  <test name="ChromeTest1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="eldt.Testcases.searchEccnPage">
+        <methods>
+          <include name="searchEccnCsv"/>
+          <include name="launchbrowser"/>
+          <include name="eldtLogin"/>
+        </methods>
+      </class> <!-- eldt.Testcases.searchEccnPage -->
+      <class name="eldt.Testcases.searchCrossReferencePage">
+        <methods>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- eldt.Testcases.searchCrossReferencePage -->
+    </classes>
+  </test> <!-- ChromeTest1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

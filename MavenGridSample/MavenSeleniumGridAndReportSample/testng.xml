@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+   
+    
+ <test name="FirefoxTest2">
+   <parameter name="browser" value="firefox"/>
+      <classes>
+       <class name="com.Testcases.comAppIn3TCs" />
+      </classes>
+   </test>
+   
+     
+    <test name="ChromeTest1">
+   <parameter name="browser" value="chrome" />
+      <classes>
+              
+               <class name="com.Testcases.comAppIn2TCs" />
+ 
+      </classes>
+   </test>
+</suite>

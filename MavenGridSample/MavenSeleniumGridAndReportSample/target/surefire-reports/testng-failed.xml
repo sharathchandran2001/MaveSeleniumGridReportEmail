@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="ChromeTest1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="eldt.Testcases.searchCrossReferencePage">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- eldt.Testcases.searchCrossReferencePage -->
+      <class name="eldt.Testcases.searchEccnPage">
+        <methods>
+          <include name="searchEccnCsv"/>
+          <include name="launchbrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- eldt.Testcases.searchEccnPage -->
+    </classes>
+  </test> <!-- ChromeTest1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
